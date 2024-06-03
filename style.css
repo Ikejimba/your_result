@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* ## Gradients */
+
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+
+  /* ....circle */
+
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main-con1 {
+  max-width: 700px;
+  /* height: 600px; */
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  /* border: solid 1px black; */
+  color: var(--White);
+  box-shadow: 10px 10px 30px var(--Pale-blue);
+  border-radius: 30px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+/* ..........MEDIA QUERY FROM SCREEN 500PX TO 0PX..../ */
+
+@media (max-width: 500px) {
+  .main-con1 {
+    flex-direction: column;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  /* .card1 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  } */
+}
+
+.card {
+  /* border: solid 1px red; */
+  border-radius: 30px;
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  padding: 30px;
+  /* width: 350px; */
+  max-width: 700px;
+  text-align: center;
+  /* height: 600px; */
+}
+
+@media (max-width: 500px) {
+  .card {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.circle1 {
+  /* background-color: red; */
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 200px;
+  height: 200px;
+  margin: 30px auto;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.seven6 {
+  font-size: 70px;
+  font-weight: 800px;
+}
+
+.card1 h2 {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.you {
+  font-size: 18px;
+  padding: 0 35px;
+  line-height: 25px;
+}
+
+.your {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+/* ............................... */
+.card2 {
+  /* border: solid 1px green; */
+  /* width: 350px; */
+  /* height: 600px; */
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.card2 h3 {
+  color: var(--Dark-gray-blue);
+}
+
+.sum {
+  padding-left: 20px;
+}
+
+.results1 {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+/* ............React.......... */
+
+.react {
+  display: flex;
+  gap: 20px;
+}
+.react p {
+  color: var(--Light-red);
+  font-weight: 700;
+}
+
+.memo p {
+  font-size: 18px;
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: 700;
+}
+
+.memo p span {
+  color: var(--Dark-gray-blue);
+}
+
+.red {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsla(0, 100%, 67%, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* ...............Memory........... */
+
+.memory {
+  display: flex;
+  gap: 20px;
+}
+.memory p {
+  color: var(--Orangey-yellow);
+  font-weight: 700;
+}
+
+.memo p {
+  font-size: 18px;
+  color: hsla(39, 100%, 56%);
+  font-weight: 700;
+}
+
+.memo p span {
+  color: var(--Dark-gray-blue);
+}
+
+.yellow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsla(0, 100%, 67%, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* .............Verbal........... */
+.verbal {
+  display: flex;
+  gap: 20px;
+}
+
+.verbal p {
+  color: var(--Green-teal);
+  font-weight: 700;
+}
+
+.memo p {
+  font-size: 18px;
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: 700;
+}
+
+.memo p span {
+  color: var(--Dark-gray-blue);
+}
+
+.green {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsla(0, 100%, 67%, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* .......visuals......... */
+.visual {
+  display: flex;
+  gap: 20px;
+}
+.visual p {
+  color: var(--Violet-blue);
+  font-weight: 700;
+}
+
+.memo p {
+  font-size: 18px;
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: 700;
+}
+
+.memo p span {
+  color: var(--Dark-gray-blue);
+}
+
+.blue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsla(0, 100%, 67%, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* ..........BUTTON....... */
+
+.but {
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
+}
+
+.but button {
+  font-size: 18px;
+  width: 300px;
+  padding: 15px 100px;
+  border: none;
+  border-radius: 30px;
+  color: var(--White);
+  background-color: var(--Dark-gray-blue);
+  cursor: pointer;
+}
+
+.but button:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
